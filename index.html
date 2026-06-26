@@ -1,42 +1,160 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - [TON NOM]</title>
+
+    <!-- POLICES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-    <h1>Portfolio</h1>
-    <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#apropos">À propos</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container nav">
+            <a href="#" class="logo">[TON NOM] <span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
 
-<section id="accueil" class="hero">
-    <h2>Bienvenue 👋</h2>
-    <p>Voici mon premier site hébergé sur GitHub Pages.</p>
-    <button id="btn">Clique-moi</button>
-</section>
+    <!-- ===== ACCUEIL ===== -->
+    <section id="accueil">
+        <div class="container hero">
+            <div class="hero-content">
+                <div class="badge">👋 Disponible</div>
+                <h1>Je suis <br /><span>[TON PRÉNOM]</span></h1>
+                <p>[Ta phrase d'accroche. Ex : Designer UI/UX basé à Paris, je crée des expériences digitales simples et humaines.]</p>
+                <div class="hero-actions">
+                    <a href="#projets" class="btn">Voir mes projets</a>
+                    <a href="#contact" class="btn btn--outline">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="https://placehold.co/600x600/eee/aaa?text=Ta+photo" alt="Photo de [TON PRÉNOM]" />
+            </div>
+        </div>
+    </section>
 
-<section id="apropos">
-    <h2>À propos</h2>
-    <p>Tu peux remplacer ce texte par une présentation de ton projet.</p>
-</section>
+    <!-- ===== PROJETS ===== -->
+    <section id="projets" class="bg-gris">
+        <div class="container">
+            <h2 class="section-title">Mes projets</h2>
+            <p class="section-sub">Une sélection de mes réalisations récentes.</p>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>email@example.com</p>
-</section>
+            <div class="projets-grid">
+                <!-- Projet 1 -->
+                <div class="projet-card">
+                    <div class="thumb">
+                        <img src="https://placehold.co/600x400/eee/aaa?text=Projet+1" alt="Projet 1" />
+                    </div>
+                    <div class="body">
+                        <span class="tag">UX/UI Design</span>
+                        <h3>Nom du projet 1</h3>
+                        <p>Brève description du projet, contexte et résultat clé.</p>
+                    </div>
+                </div>
 
-<footer>
-    <p>© 2026 Mon Site</p>
-</footer>
+                <!-- Projet 2 -->
+                <div class="projet-card">
+                    <div class="thumb">
+                        <img src="https://placehold.co/600x400/eee/aaa?text=Projet+2" alt="Projet 2" />
+                    </div>
+                    <div class="body">
+                        <span class="tag">Développement web</span>
+                        <h3>Nom du projet 2</h3>
+                        <p>Brève description du projet, contexte et résultat clé.</p>
+                    </div>
+                </div>
 
-<script src="script.js"></script>
+                <!-- Projet 3 -->
+                <div class="projet-card">
+                    <div class="thumb">
+                        <img src="https://placehold.co/600x400/eee/aaa?text=Projet+3" alt="Projet 3" />
+                    </div>
+                    <div class="body">
+                        <span class="tag">Branding / Identité</span>
+                        <h3>Nom du projet 3</h3>
+                        <p>Brève description du projet, contexte et résultat clé.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="a-propos">
+        <div class="container a-propos-wrapper">
+            <div class="text">
+                <h2 class="section-title">À propos</h2>
+                <p>[Raconte-toi en quelques lignes. Ex : Après 5 ans en agence, je me suis lancé en freelance pour accompagner des startups et des PME dans leur transformation digitale.]</p>
+                <p>[Ce qui te motive. Ex : J'aime les projets qui ont du sens, où le design et la technique servent une vraie expérience utilisateur.]</p>
+                <p><strong>📌 Disponible pour :</strong> [missions freelance / CDI / alternance / projets créatifs]</p>
+                <a href="#contact" class="btn" style="margin-top:16px;">Travaillons ensemble</a>
+            </div>
+            <div class="skills">
+                <h4>⚡ Compétences</h4>
+                <ul>
+                    <li>UX/UI Design</li>
+                    <li>Figma / Sketch</li>
+                    <li>HTML / CSS / JS</li>
+                    <li>React / Vue.js</li>
+                    <li>Branding & identité</li>
+                    <li>Photographie</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="bg-gris">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-sub">Une question, un projet ? Écrivons-nous.</p>
+
+            <div class="contact-wrapper" style="margin-top:40px;">
+                <div class="infos">
+                    <p><strong>📧 Email</strong><br /><a href="mailto:ton@email.com">ton@email.com</a></p>
+                    <p><strong>📍 Localisation</strong><br />[Ville, Pays]</p>
+                    <p><strong>🔗 Réseaux</strong><br />
+                        <a href="#">LinkedIn</a> · <a href="#">Behance</a> · <a href="#">GitHub</a>
+                    </p>
+                </div>
+
+                <form action="https://formspree.io/f/TON_ID_ICI" method="POST">
+                    <input type="text" name="nom" placeholder="Ton nom" required />
+                    <input type="email" name="email" placeholder="Ton email" required />
+                    <input type="text" name="sujet" placeholder="Sujet" />
+                    <textarea name="message" placeholder="Parle-moi de ton projet..." required></textarea>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">Behance</a>
+                <a href="#">GitHub</a>
+                <a href="#">Instagram</a>
+            </div>
+            <p>&copy; 2026 [TON NOM] · Fait avec <span style="color:var(--accent);">❤</span></p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 </html>
